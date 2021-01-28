@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Online Compiler</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="linedTextEditor-jquery.js"></script>
+    <link href="linedTextEditor-jquery.css" type="text/css" rel="stylesheet" />
+  <style>
+.form-control{
+    resize:none;
+}
+.body{
+  background-color: blue;
+}
+      </style>
+</head>
+<body>
+<div class="container ">
+<h3 class="mb-1 mt-1"> <center>Online Compiler</center></h3>
+ 
+<div class="row">
+<div class="col-9"><h4> Type your code here</h4></div>
+<div class="col-3">
+    <div class="form-group">
+  <select class="form-control" id="lang" name="lang">
+    <option>Select a language</option>
+    <option value="0">Python</option>
+    <option value="8">Java</option>
+    <option value="7">C</option>
+    <option value="77">CPP</option>
+    <option value="4">JavaScript</option>
+  </select>
+    </div>
+</div>
+</div>
+
+<div style="width: 100%;margin: auto">
+        <textarea class="lined" id="code">
+
+        </textarea>
+</div>
+
+  <!--  <textarea class="form-control" rows="13" id="code"></textarea>  -->
+
+<div class="bg-dark text-light p-2 mt-1" style="height:130px;">
+<p id="op"></p>
+</div>
+
+<button class=" mt-2 btn btn-warning" id="compile">Compile</button>
+
+</div>
+<script>
+        $(function() {
+            $(".lined").linedTextEditor();
+        });
+</script>
+
+<script src="script.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
